@@ -1,0 +1,24 @@
+.logo {
+  display: flex;
+  margin-right: 93px;
+
+  color: var(--main-txt-color);
+  font-weight: 700;
+  font-size: 26px;
+  line-height: calc(31 / 26);
+  font-family: 'Raleway';
+}
+
+.footer__logo {
+  display: flex;
+  margin-bottom: 20px;
+  margin-right: 0;
+}
+
+.logo__txt--accent {
+  color: var(--accent-txt-color);
+}
+
+.logo__txt--accent-footer {
+  color: var(--secondary-txt-color);
+}

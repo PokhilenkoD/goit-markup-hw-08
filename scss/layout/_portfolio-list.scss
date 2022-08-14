@@ -1,0 +1,76 @@
+.filter__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.filter__project {
+  position: relative;
+}
+
+.filter__link {
+  display: block;
+  transition: box-shadow var(--animations);
+
+  &:hover,
+  &:focus {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+      1px 4px 6px rgba(0, 0, 0, 0.16);
+  }
+}
+
+.filter__product {
+  border-right: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
+  border-left: 1px solid #eeeeee;
+  padding: 20px 24px;
+}
+
+.filter__uppertitle {
+  margin-bottom: 4px;
+
+  font-size: 18px;
+  line-height: calc(36 / 18);
+  letter-spacing: 0.06em;
+}
+
+.filter__txt {
+  font-size: 16px;
+  line-height: calc(30 / 16);
+  color: var(--paragraph-txt-color);
+}
+
+.filter__overlay {
+  position: relative;
+  overflow: hidden;
+}
+
+.filter__overlay-box {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  transform: translateY(100%);
+
+  padding-top: 63px;
+  padding-right: 24px;
+  padding-bottom: 63px;
+  padding-left: 24px;
+
+  background-color: rgba(33, 150, 243, 0.9);
+  backdrop-filter: blur(3px);
+
+  transition: transform var(--animations);
+
+  .filter__link:hover &,
+  .filter__link:focus & {
+    transform: translateY(0);
+  }
+}
+
+.filter__overlay-desc {
+  font-style: normal;
+  font-size: 18px;
+  line-height: calc(28 / 18);
+  color: var(--secondary-txt-color);
+}

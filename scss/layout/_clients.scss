@@ -1,0 +1,35 @@
+.clients__title {
+  font-style: normal;
+  font-size: 36px;
+  line-height: calc(42 / 36);
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.clients__list {
+  display: flex;
+  gap: 30px;
+}
+
+.clients__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 170px;
+  height: 92px;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  color: var(--icons-color);
+
+  transition: color var(--animations), border-color var(--animations);
+
+  &:hover,
+  &:focus {
+    color: var(--accent-txt-color);
+    border-color: var(--accent-txt-color);
+  }
+}
+
+.clients__icons {
+  fill: currentColor;
+}

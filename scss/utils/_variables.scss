@@ -1,0 +1,29 @@
+:root {
+  /* fonts */
+  --main-font: Roboto, sans-serif;
+  --secondary-font: Raleway, sans-serif;
+
+  /* text colors */
+  --main-txt-color: #212121;
+  --secondary-txt-color: #ffffff;
+  --accent-txt-color: #2196f3;
+  --paragraph-txt-color: #757575;
+  --addres-txt-color: rgba(255, 255, 255, 0.6);
+
+  /* bg coloros */
+  --dark-bg-color: #2f303a;
+  --light-bg-color: #f5f4fa;
+  --accent-bg-color: #2196f3;
+  --main-bg-color: #fff;
+
+  /* others */
+  --header-line-color: #ececec;
+  --hero-btn-hover-color: #188ce8;
+  --team-item-bg-color: #ffffff;
+  --icons-color: #afb1b8;
+  --icons-hover-colors: white;
+  --animations: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  --form-btn-bg-color: #188ce8;
+  --placeholder-txt-color: rgba(117, 117, 117, 0.5);
+  --agreement-txt-color: #757575;
+}
