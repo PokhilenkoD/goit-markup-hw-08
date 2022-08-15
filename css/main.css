@@ -77,18 +77,38 @@ p {
 }
 
 .container {
-  width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
 }
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
+}
 
 .section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
   padding-right: 0;
   padding-left: 0;
+}
+@media screen and (min-width: 1200px) {
+  .section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .logo {
@@ -226,8 +246,8 @@ p {
   margin-right: auto;
   margin-left: auto;
   max-width: 1600px;
-  background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/index/hero.jpg);
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/index/hero.jpg);
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../../images/index/background/hero-bg_lg_1x.jpg);
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/index/background/hero-bg_lg_1x.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -288,15 +308,32 @@ p {
   border-radius: 4px;
 }
 
-.benefits__list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  gap: 30px;
+@media screen and (min-width: 768px) {
+  .benefits__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    gap: 30px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .benefits__list {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
 }
 
-.benefits__item {
-  width: 270px;
+@media screen and (min-width: 768px) {
+  .benefits__item {
+    max-width: 354px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .benefits__item {
+    width: 270px;
+  }
 }
 
 .benefits__box-icons {
@@ -314,6 +351,11 @@ p {
   margin-bottom: 30px;
   background-color: var(--light-bg-color);
 }
+@media screen and (min-width: 480px) {
+  .benefits__box-icons {
+    width: 100%;
+  }
+}
 
 .benefits__icons {
   background-color: var(--light-bg-color);
@@ -325,6 +367,11 @@ p {
   font-size: 14px;
   text-transform: uppercase;
   color: var(--main-txt-color);
+}
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .benefits__title {
+    text-align: center;
+  }
 }
 
 .benefits__uppertitle {
