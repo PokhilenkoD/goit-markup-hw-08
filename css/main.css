@@ -38,6 +38,10 @@ img {
   display: block;
   max-width: 100%;
   height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
 }
 
 .link {
@@ -115,18 +119,25 @@ p {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-right: 93px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   color: var(--main-txt-color);
   font-weight: 700;
   font-size: 26px;
   line-height: 1.1923076923;
   font-family: "Raleway";
 }
+@media screen and (min-width: 1200px) {
+  .logo {
+    margin-right: 93px;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+}
 
 .footer__logo {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   margin-bottom: 20px;
   margin-right: 0;
 }
@@ -139,8 +150,10 @@ p {
   color: var(--secondary-txt-color);
 }
 
-.socials {
-  margin-right: auto;
+@media screen and (min-width: 1200px) {
+  .socials {
+    margin-right: auto;
+  }
 }
 
 .socials__title {
@@ -382,6 +395,11 @@ p {
 .about {
   padding-top: 0;
 }
+@media screen and (max-width: 1199px) {
+  .about {
+    display: none;
+  }
+}
 
 .about__title {
   margin-bottom: 50px;
@@ -429,17 +447,28 @@ p {
 }
 
 .team__title {
-  margin-bottom: 50px;
-  font-size: 36px;
-  line-height: 1.1666666667;
+  margin-bottom: 30px;
+  font-size: 28px;
+  line-height: 1.1785714286;
   text-align: center;
 }
+@media screen and (min-width: 1200px) {
+  .team__title {
+    margin-bottom: 50px;
+    font-size: 36px;
+    line-height: 1.1666666667;
+  }
+}
 
-.team__list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  gap: 30px;
+@media screen and (min-width: 768px) {
+  .team__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 30px;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
 }
 
 .team__item {
@@ -447,6 +476,14 @@ p {
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
+}
+.team__item:not(:last-child) {
+  margin-bottom: 30px;
+}
+@media screen and (min-width: 768px) {
+  .team__item:not(:last-child) {
+    margin-bottom: 0;
+  }
 }
 
 .team__box {
@@ -510,10 +547,16 @@ p {
 
 .clients__title {
   font-style: normal;
-  font-size: 36px;
-  line-height: 1.1666666667;
+  font-size: 28px;
+  line-height: 1.1785714286;
   text-align: center;
   margin-bottom: 50px;
+}
+@media screen and (min-width: 1200px) {
+  .clients__title {
+    font-size: 36px;
+    line-height: 1.1666666667;
+  }
 }
 
 .clients__list {
@@ -521,6 +564,8 @@ p {
   display: -ms-flexbox;
   display: flex;
   gap: 30px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .clients__link {
@@ -533,7 +578,7 @@ p {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 170px;
+  width: 210px;
   height: 92px;
   border: 1px solid #afb1b8;
   border-radius: 4px;
@@ -545,34 +590,75 @@ p {
   color: var(--accent-txt-color);
   border-color: var(--accent-txt-color);
 }
+@media screen and (min-width: 768px) {
+  .clients__link {
+    width: 226px;
+    height: 92px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .clients__link {
+    width: 170px;
+    height: 92px;
+  }
+}
 
 .clients__icons {
   fill: currentColor;
 }
 
 .footer {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   background-color: var(--dark-bg-color);
   padding-top: 60px;
   padding-bottom: 60px;
 }
 
 .footer__content {
+  text-align: center;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: baseline;
-      -ms-flex-align: baseline;
-          align-items: baseline;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+@media screen and (min-width: 480px) and (max-width: 1199px) {
+  .footer__content {
+    gap: 60px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .footer__content {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer__content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+    text-align: left;
+  }
 }
 
-.footer__addres {
-  margin-right: 70px;
+@media screen and (min-width: 1200px) {
+  .footer__addres {
+    margin-right: 70px;
+  }
 }
 
 .footer__item {
@@ -582,7 +668,7 @@ p {
   color: var(--secondary-txt-color);
 }
 .footer__item:not(:last-child) {
-  margin-bottom: 9px;
+  margin-bottom: 8px;
 }
 .footer__item:not(:first-child) {
   color: var(--addres-txt-color);
@@ -614,11 +700,24 @@ p {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  gap: 12px;
+  gap: 20px;
+}
+@media screen and (min-width: 480px) and (max-width: 1199px) {
+  .footer-subscription__group {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer-subscription__group {
+    gap: 12px;
+  }
 }
 
 .footer-subscription__input {
-  width: 358px;
+  width: 450px;
   padding-top: 15px;
   padding-right: 15px;
   padding-bottom: 15px;
@@ -630,6 +729,11 @@ p {
   outline: transparent;
   background-color: var(--dark-bg-color);
   color: var(--secondary-txt-color);
+}
+@media screen and (min-width: 1200px) {
+  .footer-subscription__input {
+    width: 358px;
+  }
 }
 .footer-subscription__input::-webkit-input-placeholder {
   font-size: 16px;

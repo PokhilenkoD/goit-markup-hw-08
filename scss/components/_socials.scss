@@ -1,5 +1,7 @@
 .socials {
-  margin-right: auto;
+  @media screen and (min-width: 1200px) {
+    margin-right: auto;
+  }
 }
 
 .socials__title {
