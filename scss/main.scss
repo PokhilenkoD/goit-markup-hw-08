@@ -1,11 +1,13 @@
 @import './utils/variables';
+@import './utils/visually-hidden';
 @import './base/base';
 @import './base/reset';
-@import './utils/visually-hidden';
 @import './components/container';
 @import './components/section';
 @import './components/logo';
 @import './components/socials';
+@import './components/modal-window';
+@import './components/modal-form';
 @import './layout/header';
 @import './layout/hero';
 @import './layout/benefits';
@@ -15,6 +17,5 @@
 @import './layout/footer';
 @import './layout/portfolio-filter';
 @import './layout/portfolio-list';
-@import './components/modal-window';
-@import './components/modal-form';
 @import './layout/navigation';
+@import './components/mobile-menu';

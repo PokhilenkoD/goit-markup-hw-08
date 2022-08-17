@@ -10,6 +10,10 @@
 .header__contacts-list {
   display: flex;
   gap: 30px;
+
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
 }
 
 .header__contacts-link {

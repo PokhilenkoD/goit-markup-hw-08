@@ -25,12 +25,17 @@
 
   <body>
     <!-- Header section -->
-    <!-- <header class="header">
+    <header class="header">
       <div class="header__content container">
         <a class="logo link" href="./index.html">
           <span class="logo__txt logo__txt--accent">Web</span>
           Studio
         </a>
+        <button class="mobile-menu__btn" type="button">
+          <svg class="mobile-menu__icon" width="40" height="40">
+            <use href="./images/icons/icons.svg#mobile_menu_open"></use>
+          </svg>
+        </button>
         <nav class="nav">
           <ul class="nav__list list">
             <li class="nav__item">
@@ -61,15 +66,15 @@
           </li>
         </ul>
       </div>
-    </header> -->
+    </header>
     <main>
       <!-- Hero section -->
-      <!-- <section class="hero">
+      <section class="hero">
         <div class="hero__content container">
           <h1 class="hero__title">Эффективные решения для вашего бизнеса</h1>
           <button class="hero__btn" type="button" data-modal-open>Заказать услугу</button>
         </div>
-      </section> -->
+      </section>
       <!-- Benefits section -->
       <section class="benefits section">
         <div class="benefits__content container">
@@ -715,5 +720,23 @@
       </div>
     </div>
     <script src="./js/modal.js"></script> -->
+    <!-- Mobile menu -->
+    <div class="mobile-menu__container">
+      <ul class="mobile-menu__nav list">
+        <li><a class="mobile-menu__nav-item link" href="">Студия</a></li>
+        <li><a class="link" href="">Портфолио</a></li>
+        <li><a class="link" href="">Контакты</a></li>
+      </ul>
+      <ul class="mobile-menu__contacts list">
+        <li><a class="link" href="tel:+380961111111">+38 096 111 11 11</a></li>
+        <li><a class="link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+      </ul>
+      <ul class="mobile-menu__socials list">
+        <li><a class="link" href="">Instagram</a></li>
+        <li><a class="link" href="">Twitter</a></li>
+        <li><a class="link" href="">Facebook</a></li>
+        <li><a class="link" href="">LinkedIn</a></li>
+      </ul>
+    </div>
   </body>
 </html>
