@@ -1255,6 +1255,11 @@ p {
     height: 146px;
   }
 }
+@media screen and (min-width: 1200px) {
+  .filter__product {
+    height: 110px;
+  }
+}
 
 .filter__uppertitle {
   margin-bottom: 4px;
@@ -1272,6 +1277,12 @@ p {
 .filter__overlay {
   position: relative;
   overflow: hidden;
+}
+@media screen and (min-width: 1200px) {
+  .filter__overlay {
+    width: 370px;
+    height: 294px;
+  }
 }
 
 .filter__overlay-box {
