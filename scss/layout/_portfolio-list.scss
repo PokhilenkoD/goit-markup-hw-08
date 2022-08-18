@@ -6,6 +6,10 @@
 
 .filter__project {
   position: relative;
+
+  @media screen and (min-width: 480px) and (max-width: 767px) {
+    width: 100%;
+  }
 }
 
 .filter__link {
@@ -24,6 +28,11 @@
   border-bottom: 1px solid #eeeeee;
   border-left: 1px solid #eeeeee;
   padding: 20px 24px;
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    width: 354px;
+    height: 146px;
+  }
 }
 
 .filter__uppertitle {
@@ -65,6 +74,16 @@
   .filter__link:hover &,
   .filter__link:focus & {
     transform: translateY(0);
+  }
+
+  @media screen and (min-width: 480px) and (max-width: 767px) {
+    width: 450px;
+    height: 294px;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    width: 354px;
+    height: 294px;
   }
 }
 

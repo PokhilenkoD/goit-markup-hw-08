@@ -22,7 +22,7 @@
     <link rel="stylesheet" href="./css/main.min.css" />
     <!-- <link rel="stylesheet" href="./css/styles.css" /> -->
   </head>
-  <body>
+  <body body>
     <!-- Header section -->
     <header class="header">
       <div class="header__content container">
@@ -30,6 +30,11 @@
           <span class="logo__txt logo__txt--accent">Web</span>
           Studio
         </a>
+        <button class="mobile-menu__btn" type="button" data-menu-open>
+          <svg class="mobile-menu__icon" width="40" height="40">
+            <use href="./images/icons/icons.svg#mobile_menu_open"></use>
+          </svg>
+        </button>
         <nav class="nav">
           <ul class="nav__list list">
             <li class="nav__item">
@@ -87,7 +92,19 @@
             <li class="filter__project">
               <a class="link filter__link" href="">
                 <div class="filter__overlay">
-                  <img src="./images/portfolio/techno_lg_1x.jpg" alt="Технокряк" width="370" />
+                  <img
+                    srcset="
+                      ./images/portfolio/techno_lg_1x.jpg 370w,
+                      ./images/portfolio/techno_lg_2x.jpg 740w,
+                      ./images/portfolio/techno_m_1x.jpg  354w,
+                      ./images/portfolio/techno_m_2x.jpg  708w,
+                      ./images/portfolio/techno_s_1x.jpg  450w,
+                      ./images/portfolio/techno_s_2x.jpg  900w
+                    "
+                    sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                    src="./images/portfolio/techno_lg_1x.jpg"
+                    alt="Технокряк"
+                  />
                   <div class="filter__overlay-box">
                     <p class="filter__overlay-desc">
                       Ресурс предлагает комплексные предложения с разным уровнем функционала и
@@ -106,9 +123,17 @@
               <a class="link filter__link" href="">
                 <div class="filter__overlay">
                   <img
+                    srcset="
+                      ./images/portfolio/poster_lg_1x.jpg 370w,
+                      ./images/portfolio/poster_lg_2x.jpg 740w,
+                      ./images/portfolio/poster_m_1x.jpg  354w,
+                      ./images/portfolio/poster_m_2x.jpg  708w,
+                      ./images/portfolio/poster_s_1x.jpg  450w,
+                      ./images/portfolio/poster_s_2x.jpg  900w
+                    "
+                    sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
                     src="./images/portfolio/poster_lg_1x.jpg"
                     alt="Постер New Orlean vs Golden Star"
-                    width="370"
                   />
                   <div class="filter__overlay-box">
                     <p class="filter__overlay-desc">
@@ -128,9 +153,17 @@
               <a class="link filter__link" href="">
                 <div class="filter__overlay">
                   <img
+                    srcset="
+                      ./images/portfolio/rest_app_lg_1x.jpg 370w,
+                      ./images/portfolio/rest_app_lg_2x.jpg 740w,
+                      ./images/portfolio/rest_app_m_1x.jpg  354w,
+                      ./images/portfolio/rest_app_m_2x.jpg  708w,
+                      ./images/portfolio/rest_app_s_1x.jpg  450w,
+                      ./images/portfolio/rest_app_s_2x.jpg  900w
+                    "
+                    sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
                     src="./images/portfolio/rest_app_lg_1x.jpg"
                     alt="Ресторан Seafood"
-                    width="370"
                   />
                   <div class="filter__overlay-box">
                     <p class="filter__overlay-desc">
@@ -149,7 +182,19 @@
             <li class="filter__project">
               <a class="link filter__link" href="">
                 <div class="filter__overlay">
-                  <img src="./images/portfolio/project_lg_1x.jpg" alt="Проект Prime" width="370" />
+                  <img
+                    srcset="
+                      ./images/portfolio/project_lg_1x.jpg 370w,
+                      ./images/portfolio/project_lg_2x.jpg 740w,
+                      ./images/portfolio/project_m_1x.jpg  354w,
+                      ./images/portfolio/project_m_2x.jpg  708w,
+                      ./images/portfolio/project_s_1x.jpg  450w,
+                      ./images/portfolio/project_s_2x.jpg  900w
+                    "
+                    sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                    src="./images/portfolio/project_lg_1x.jpg"
+                    alt="Проект Prime"
+                  />
                   <div class="filter__overlay-box">
                     <p class="filter__overlay-desc">
                       Ресурс предлагает комплексные предложения с разным уровнем функционала и
@@ -168,9 +213,17 @@
               <a class="link filter__link" href="">
                 <div class="filter__overlay">
                   <img
+                    srcset="
+                      ./images/portfolio/boxes_app_lg_1x.jpg 370w,
+                      ./images/portfolio/boxes_app_lg_2x.jpg 740w,
+                      ./images/portfolio/boxes_app_m_1x.jpg  354w,
+                      ./images/portfolio/boxes_app_m_2x.jpg  708w,
+                      ./images/portfolio/boxes_app_s_1x.jpg  450w,
+                      ./images/portfolio/boxes_app_s_2x.jpg  900w
+                    "
+                    sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
                     src="./images/portfolio/boxes_app_lg_1x.jpg"
                     alt="Проект Boxes"
-                    width="370"
                   />
                   <div class="filter__overlay-box">
                     <p class="filter__overlay-desc">
@@ -190,9 +243,17 @@
               <a class="link filter__link" href="">
                 <div class="filter__overlay">
                   <img
+                    srcset="
+                      ./images/portfolio/web_lg_1x.jpg 370w,
+                      ./images/portfolio/web_lg_2x.jpg 740w,
+                      ./images/portfolio/web_m_1x.jpg  354w,
+                      ./images/portfolio/web_m_2x.jpg  708w,
+                      ./images/portfolio/web_s_1x.jpg  450w,
+                      ./images/portfolio/web_s_2x.jpg  900w
+                    "
+                    sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
                     src="./images/portfolio/web_lg_1x.jpg"
                     alt="Inspiration has no Borders"
-                    width="370"
                   />
                   <div class="filter__overlay-box">
                     <p class="filter__overlay-desc">
@@ -212,9 +273,17 @@
               <a class="link filter__link" href="">
                 <div class="filter__overlay">
                   <img
+                    srcset="
+                      ./images/portfolio/design_lg_1x.jpg 370w,
+                      ./images/portfolio/design_lg_2x.jpg 740w,
+                      ./images/portfolio/design_m_1x.jpg  354w,
+                      ./images/portfolio/design_m_2x.jpg  708w,
+                      ./images/portfolio/design_s_1x.jpg  450w,
+                      ./images/portfolio/design_s_2x.jpg  900w
+                    "
+                    sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
                     src="./images/portfolio/design_lg_1x.jpg"
                     alt="Издание Limited Edition"
-                    width="370"
                   />
                   <div class="filter__overlay-box">
                     <p class="filter__overlay-desc">
@@ -233,7 +302,19 @@
             <li class="filter__project">
               <a class="link filter__link" href="">
                 <div class="filter__overlay">
-                  <img src="./images/portfolio/lab_lg_1x.jpg" alt="Проект LAB" width="370" />
+                  <img
+                    srcset="
+                      ./images/portfolio/lab_lg_1x.jpg 370w,
+                      ./images/portfolio/lab_lg_2x.jpg 740w,
+                      ./images/portfolio/lab_m_1x.jpg  354w,
+                      ./images/portfolio/lab_m_2x.jpg  708w,
+                      ./images/portfolio/lab_s_1x.jpg  450w,
+                      ./images/portfolio/lab_s_2x.jpg  900w
+                    "
+                    sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                    src="./images/portfolio/lab_lg_1x.jpg"
+                    alt="Проект LAB"
+                  />
                   <div class="filter__overlay-box">
                     <p class="filter__overlay-desc">
                       Ресурс предлагает комплексные предложения с разным уровнем функционала и
@@ -251,7 +332,19 @@
             <li class="filter__project">
               <a class="link filter__link" href="">
                 <div class="filter__overlay">
-                  <img src="./images/portfolio/app_lg_1x.jpg" alt="Growing Business" width="370" />
+                  <img
+                    srcset="
+                      ./images/portfolio/app_lg_1x.jpg 370w,
+                      ./images/portfolio/app_lg_2x.jpg 740w,
+                      ./images/portfolio/app_m_1x.jpg  354w,
+                      ./images/portfolio/app_m_2x.jpg  708w,
+                      ./images/portfolio/app_s_1x.jpg  450w,
+                      ./images/portfolio/app_s_2x.jpg  900w
+                    "
+                    sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                    src="./images/portfolio/app_lg_1x.jpg"
+                    alt="Growing Business"
+                  />
                   <div class="filter__overlay-box">
                     <p class="filter__overlay-desc">
                       Ресурс предлагает комплексные предложения с разным уровнем функционала и
@@ -377,5 +470,49 @@
         </div>
       </div>
     </footer>
+    <!-- Mobile menu -->
+    <div class="mobile-menu__container" data-menu>
+      <ul class="mobile-menu__nav list">
+        <li><a class="mobile-menu__nav-link link" href="./index.html">Студия</a></li>
+        <li>
+          <a
+            class="mobile-menu__nav-link mobile-menu__nav-link--current link"
+            href="./portfolio.html"
+            >Портфолио</a
+          >
+        </li>
+        <li><a class="mobile-menu__nav-link link" href="">Контакты</a></li>
+      </ul>
+      <ul class="mobile-menu__contacts list">
+        <li>
+          <a class="mobile-menu__contacts-tel link" href="tel:+380961111111">+38 096 111 11 11</a>
+        </li>
+        <li>
+          <a class="mobile-menu__contacts-mail link" href="mailto:info@devstudio.com"
+            >info@devstudio.com</a
+          >
+        </li>
+      </ul>
+      <ul class="mobile-menu__socials list">
+        <li class="mobile-menu_socials-item">
+          <a class="mobile-menu__socials-link link" href="">Instagram</a>
+        </li>
+        <li class="mobile-menu_socials-item">
+          <a class="mobile-menu__socials-link link" href="">Twitter</a>
+        </li>
+        <li class="mobile-menu_socials-item">
+          <a class="mobile-menu__socials-link link" href="">Facebook</a>
+        </li>
+        <li class="mobile-menu_socials-item">
+          <a class="mobile-menu__socials-link link" href="">LinkedIn</a>
+        </li>
+      </ul>
+      <button class="mobile-menu__btn-close" type="button" data-menu-close>
+        <svg width="40" height="40">
+          <use href="./images/icons/icons.svg#mobile_menu_close"></use>
+        </svg>
+      </button>
+    </div>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>

@@ -14,11 +14,14 @@
   @media screen and (max-width: 767px) {
     display: none;
   }
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    flex-direction: column;
+    gap: 10px;
+  }
 }
 
 .header__contacts-link {
-  padding-top: 32px;
-  padding-bottom: 32px;
   display: flex;
   align-items: center;
 
@@ -33,6 +36,14 @@
   &:focus {
     color: var(--accent-txt-color);
   }
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+}
+
+.header__contacts-item {
 }
 
 .header__contacts-item:hover,
